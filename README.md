@@ -26,6 +26,7 @@ cd <repository-folder>
 
 Execution
 python3 alphanumeric_sort.py
+- enter any string input and get it sorted
 python3 background_script.py
 
 - Add test files(test_file.txt) in tmp folder once its been created so you see the folder being zipped 
