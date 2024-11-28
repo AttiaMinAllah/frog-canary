@@ -1,0 +1,174 @@
+{
+    "tests": [
+      {
+        "feature": "Water Resistance",
+        "scenario": "Verify camera's water resistance up to 100m depth",
+        "steps": [
+          "Given the camera is fully functional",
+          "When the camera is submerged in water at 1m depth for 10 minutes",
+          "And the depth is gradually increased to 100m in increments of 10m",
+          "Then the camera should remain functional without water ingress at every depth"
+        ]
+      },
+      {
+        "feature": "Water Resistance",
+        "scenario": "Verify camera durability under sudden pressure changes",
+        "steps": [
+          "Given the camera is placed in water at a depth of 10m",
+          "When the depth is suddenly increased to 50m within 5 seconds",
+          "Then the camera should remain functional without water ingress or performance issues"
+        ]
+      },
+      {
+        "feature": "Water Resistance",
+        "scenario": "Verify camera functionality after prolonged submersion",
+        "steps": [
+          "Given the camera is placed in water at a depth of 5m for 24 hours",
+          "When the camera is removed and tested",
+          "Then the camera should function normally without water damage"
+        ]
+      },
+      {
+        "feature": "Water Resistance",
+        "scenario": "Verify camera resistance to saltwater",
+        "steps": [
+          "Given the camera is placed in saltwater at a depth of 10m for 2 hours",
+          "When the camera is rinsed with fresh water and tested",
+          "Then the camera should remain functional",
+          "And show no signs of corrosion or performance degradation"
+        ]
+      },
+      {
+        "feature": "Shock Resistance",
+        "scenario": "Verify the camera survives a 15m vertical drop",
+        "steps": [
+          "Given the camera is dropped from a 15m height onto a concrete surface",
+          "When the camera is inspected for physical damage",
+          "And the power, shutter, and mode buttons are tested",
+          "Then the camera should show no major physical damage",
+          "And all functionalities should operate normally"
+        ]
+      },
+      {
+        "feature": "Shock Resistance",
+        "scenario": "Verify camera durability after multiple consecutive drops",
+        "steps": [
+          "Given the camera is dropped from a 15m height onto a concrete surface",
+          "And the process is repeated 5 times",
+          "When the camera is inspected for physical damage",
+          "Then the camera should show no major damage",
+          "And all functionalities should operate normally"
+        ]
+      },
+      {
+        "feature": "Battery Life",
+        "scenario": "Verify battery lasts 10 hours in standby mode",
+        "steps": [
+          "Given the camera battery is fully charged",
+          "When the camera is left in standby mode for 10 hours",
+          "Then the camera should remain powered on after 10 hours"
+        ]
+      },
+      {
+        "feature": "Battery Life",
+        "scenario": "Verify battery lasts 4 hours during continuous filming",
+        "steps": [
+          "Given the camera battery is fully charged",
+          "When the camera records video continuously",
+          "Then the camera should record for at least 4 hours before shutting down"
+        ]
+      },
+      {
+        "feature": "Battery Life",
+        "scenario": "Verify behavior when starting a recording with low battery",
+        "steps": [
+          "Given the camera battery is at 5% charge",
+          "When the camera starts recording a video",
+          "Then the camera should display a low battery warning",
+          "And the camera should automatically save the recording before shutting down"
+        ]
+      },
+      {
+        "feature": "Power Button",
+        "scenario": "Verify the power button functionality",
+        "steps": [
+          "Given the camera is off",
+          "When the power button is pressed",
+          "Then the camera should turn on",
+          "When the power button is pressed again",
+          "Then the camera should turn off"
+        ]
+      },
+      {
+        "feature": "Shutter Button",
+        "scenario": "Verify the shutter button functionality",
+        "steps": [
+          "Given the camera is in photo mode",
+          "When the shutter button is pressed 50 times",
+          "Then the camera should capture 50 photos successfully",
+          "Given the camera is in video mode",
+          "When the shutter button is pressed 50 times",
+          "Then the camera should start and stop video recording successfully"
+        ]
+      },
+      {
+        "feature": "Mode Switch",
+        "scenario": "Verify the mode switch functionality",
+        "steps": [
+          "Given the camera is in photo mode",
+          "When the mode switch button is pressed",
+          "Then the camera should switch to video mode",
+          "When the mode switch button is pressed again",
+          "Then the camera should switch back to photo mode"
+        ]
+      },
+      {
+        "feature": "Mode Switch",
+        "scenario": "Verify behavior during rapid mode switching",
+        "steps": [
+          "Given the camera is powered on",
+          "When the mode switch button is pressed 10 times within 5 seconds",
+          "Then the camera should not crash or freeze",
+          "And the camera should correctly toggle between video and photo modes"
+        ]
+      },
+      {
+        "feature": "Button Responsiveness",
+        "scenario": "Verify behavior for partially pressing a button",
+        "steps": [
+          "Given the camera is powered on",
+          "When the shutter button is pressed halfway",
+          "Then the camera should not perform any unintended action",
+          "And the button should require a full press to capture a photo or start video recording"
+        ]
+      },
+      {
+        "feature": "Temperature Resistance",
+        "scenario": "Verify camera functionality at high temperatures",
+        "steps": [
+          "Given the camera is placed in an environment at 50°C for 2 hours",
+          "When the camera's functionalities are tested",
+          "Then the camera should operate normally without overheating"
+        ]
+      },
+      {
+        "feature": "Temperature Resistance",
+        "scenario": "Verify camera functionality at low temperatures",
+        "steps": [
+          "Given the camera is placed in an environment at -20°C for 2 hours",
+          "When the camera's functionalities are tested",
+          "Then the camera should operate normally without freezing"
+        ]
+      },
+      {
+        "feature": "Temperature Resistance",
+        "scenario": "Verify camera functionality under rapid temperature changes",
+        "steps": [
+          "Given the camera is placed in an environment at -20°C",
+          "When the temperature is suddenly increased to 50°C within 10 seconds",
+          "Then the camera should continue functioning without overheating or freezing"
+        ]
+      }
+    ]
+  }
+  
